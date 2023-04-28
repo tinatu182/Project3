@@ -1,37 +1,38 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ohmyfood</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <script src="https://kit.fontawesome.com/da7ea8400e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="css/all.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shrikhand&display=swap" rel="stylesheet"> 
+    <link href="css/main.css" rel="stylesheet">
+
 </head>
 <body>
-    <section class="header_section">
-        <h2 class="transparent">transparent</h2>
-        <header class="header height">
-            <div class="header__logo height">
-                <img alt="ohmyfood" src="images/logo/ohmyfood.png" class="header__logo__responsive">
-            </div>
-        </header>
-    </section>
-    <section class="header_section_menu">
-        <h2 class="transparent">transparent</h2>
-        <div class="header_location">
-            <i class="fas fa-map-marker-alt location fa-lg padding_right2"></i> 
-            <h2>Paris, Belleville</h2>         
+    <!-- Header -->
+    <header class="header_logo">
+        <img alt="ohmyfood" src="images/logo/ohmyfood.png" class="logo_image">
+    </header>
+
+    <main class="main">
+    <!-- Section Maps -->
+        <div class="maps">
+        <span>
+<i class="fa-solid fa-location-dot Location_icon"></i>        </span>
+            <span class="maps__search">
+            <input type="search" name="city" value="Paris,Belleville" placeholder="Location">
+        </span>
         </div>
-        <div class="header_info">
-            <p class="header_info__p1">Book the menu you like</p>
-            <p class="header_info__p">Discover top-of-the-art restaurants we picked for you</p>
-            <button class="explore_btn" type="submit">
-            </button>
-        </div>
-    </section>
+        <!-- Section about-->
+    <div class="about">
+        <h2> Book the menu you like </h2>
+        <p> Discover top-of-the-art restaurants we picked for you </p>
+        <span class="btn__about">
+        <button> Explore our restaurants </button>
+    </span>
+    </div>
 </body>
 </html>

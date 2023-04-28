@@ -1,0 +1,79 @@
+@media screen {
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1rem;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+.header_logo {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  margin: 30px;
+  font-size: 23px;
+}
+
+p {
+  font-size: 17px;
+  margin: 1px 39px 26px 51px;
+  text-align: center;
+}
+
+.maps {
+  background: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 5px 5px 0px #dddddd;
+}
+
+.maps__search input {
+  border: none;
+  background: #eaeaea;
+  font-size: 1rem;
+  padding: 20px 5px 20px 5px;
+  margin-top: 5px;
+  text-align: center;
+  width: 150px;
+}
+.logo_image {
+  width: 166px;
+  margin: 25px 0 10px 0;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #aaaaaa21;
+  margin: 0 0 45px 0;
+}
+.btn__about button {
+  background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 13px 11px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+}
+
+.btn__about button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 4px 4px 6px #000;
+}
+}
