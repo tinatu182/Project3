@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ohmyfood</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <!-- TODO add roboto and shrikhan -->
     <script src="https://kit.fontawesome.com/da7ea8400e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="css/main.css" rel="stylesheet">
-
 </head>
+
 <body>
     <!-- Header -->
     <header class="header_logo">
@@ -18,21 +19,43 @@
     </header>
 
     <main class="main">
-    <!-- Section Maps -->
+        <!-- Section Maps -->
         <div class="maps">
-        <span>
-<i class="fa-solid fa-location-dot Location_icon"></i>        </span>
+            <span>
+                <i class="fa-solid fa-location-dot Location_icon"></i> </span>
             <span class="maps__search">
-            <input type="search" name="city" value="Paris,Belleville" placeholder="Location">
-        </span>
+                <input type="search" name="city" value="Paris,Belleville" placeholder="Location">
+            </span>
         </div>
         <!-- Section about-->
-    <div class="about">
-        <h2> Book the menu you like </h2>
-        <p> Discover top-of-the-art restaurants we picked for you </p>
-        <span class="btn__about">
-        <button> Explore our restaurants </button>
-    </span>
-    </div>
+        <div class="about">
+            <h2> Book the menu you like </h2>
+            <p class="about_text"> Discover top-of-the-art restaurants we picked for you </p>
+            <span class="btn__about">
+                <button> Explore our restaurants </button>
+            </span>
+        </div>
+        <section class="howto_section">
+            <h2 class="howto_title">How it works</h2>
+            <ul class="howto">
+                <li class="howto-btn">
+                    <div class="howto_number">1</div>
+                    <div class="howto_icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                    <p class="howto_text">Chose a restaurant</p>
+                </li>
+                <li class="howto-btn">
+                    <div class="howto_number">2</div>
+                    <div class="howto_icon"><i class="fa-solid fa-list"></i></div>
+                    <p class="howto_text">Create your menu</p>
+                </li>
+                <li class="howto-btn">
+                    <div class="howto_number">3</div>
+                    <div class="howto_icon-3"><i class="fa-solid fa-store"></i></div>
+                    <p class="howto_text">Go enjoy it at the restaurant</p>
+                </li>
+            </ul>
+        </section>
+
 </body>
+
 </html>

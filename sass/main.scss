@@ -1,6 +1,7 @@
-// @import "./utils/variables";
+@import "./utils/variables";
 // @import "./utils/functions";
 // @import "./utils/mixins";
+@import "./vendors/normalize";
 // @import "./utils/extensions";
 
 // @import "./base/base";
@@ -18,3 +19,4 @@
 // @import "./pages/about";
 // @import "./pages/project";
 @import "./pages/home";
+@import "./pages/howto";
