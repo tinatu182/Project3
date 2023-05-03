@@ -41,8 +41,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: inset 0px 5px 5px 0px #dddddd;
-  border-top: 1px solid #34333326;
+  box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
 }
 
 .maps__search input {
