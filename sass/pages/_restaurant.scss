@@ -1,0 +1,60 @@
+ .restaurant_title h3 {
+    padding: 30px 0px 0px 10px; 
+  }
+ 
+  .main_restaurant {
+    background: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+    }
+
+  .heart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .heart h4 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  .new {
+    color: #008766;
+    background: $color-box;
+    border: 5px solid $color-box;
+    border-radius: 5px;
+    position: absolute;
+    right: 1%;
+    top: 5%;
+  }
+  .card {
+    border-radius: 25px;
+    box-shadow: 4px 4px 6px #aaa;
+    margin: 20px;
+    position: relative;
+    background: #fff;
+  }
+  .card_img {
+    object-fit: cover;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    height: 100%;
+    max-height: 220px;
+  }
+  card-figure {
+    margin: 0;
+  }
+  card-figcaption {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
