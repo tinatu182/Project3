@@ -307,13 +307,12 @@ template {
   display: none;
 }
 
-@media screen {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
+*,
+::before,
+::after {
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -333,14 +332,14 @@ html {
 
 h2 {
   margin: 30px;
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .about_text {
   font-size: 17px;
   margin: 1px 39px 26px 38px;
   text-align: center;
-  color: rgba(39, 43, 48, 0.5490196078);
+  color: rgba(0, 0, 0, 0.7490196078);
 }
 
 .maps {
@@ -359,7 +358,7 @@ h2 {
   margin-top: 5px;
   text-align: center;
   width: 150px;
-  color: rgba(5, 7, 6, 0.7490196078);
+  color: #000;
 }
 
 .logo_image {
@@ -420,7 +419,7 @@ i {
 }
 
 .howto_icon {
-  color: rgba(39, 43, 48, 0.5490196078);
+  color: rgba(0, 0, 0, 0.7490196078);
   margin: 5px 8px 7px 0px;
   width: 32px;
   font-size: 20px;
@@ -452,31 +451,29 @@ i {
 }
 
 .howto_text {
-  color: rgba(5, 7, 6, 0.7490196078);
+  color: #000;
 }
 
-.restaurant_title h3 {
-  padding: 30px 0px 0px 10px;
+.restaurant {
+  background-color: #F2F2F2;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
 }
 
-.main_restaurant {
-  background: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
+.restaurant_title {
+  margin: 60px 5px 27px 28px;
 }
 
 .heart {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.heart h4 {
-  margin: 0;
-  font-size: 1.5rem;
+  float: right;
+  position: relative;
+  top: -25%;
+  width: 58px;
+  size: large;
+  font-size: 28px;
+  color: rgba(25, 23, 23, 0.7254901961);
 }
 
 .new {
@@ -484,26 +481,46 @@ i {
   background: #a9f4e1;
   border: 5px solid #a9f4e1;
   border-radius: 5px;
-  position: absolute;
-  right: 1%;
-  top: 5%;
+  position: relative;
+  top: -92%;
+  left: 85%;
 }
 
 .card {
-  border-radius: 25px;
-  box-shadow: 4px 4px 6px #aaa;
-  margin: 20px;
-  position: relative;
-  background: #fff;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.btn_card {
+  width: 381px;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 28px;
+  height: 275px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .card_img {
+  width: 381px;
+  height: 188px;
   object-fit: cover;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  width: 100%;
-  height: 100%;
-  max-height: 220px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card_title {
+  color: #000;
+  position: relative;
+  right: -5%;
+}
+
+.card_text {
+  color: rgba(25, 23, 23, 0.7254901961);
+  position: relative;
+  right: -5%;
+  top: -4%;
 }
 
 card-figure {
