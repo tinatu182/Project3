@@ -56,6 +56,17 @@ i {
     box-shadow: 4px 10px 6px #e9e9e9;
 }
 
+.howto-btn1 {
+    margin: 18px 0px 15px 0px;
+    display: flex;
+    align-items: center;
+    background: $color-purple;
+    border: 12px solid $color-border;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 4px 10px 6px #e9e9e9;
+}
+
 .howto_text {
     color: $color-primary;
 }
