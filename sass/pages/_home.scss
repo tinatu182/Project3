@@ -16,6 +16,12 @@
    font-family: "Roboto", sans-serif;
  }
 
+ main {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
  .header_logo {
    display: flex;
    justify-content: center;
@@ -39,6 +45,12 @@
    justify-content: center;
    align-items: center;
    box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+   width: 100%;
+
+   @include desktop {
+     width: 350px;
+     border-radius: 15px;
+   }
  }
 
  .maps__search input {
@@ -55,6 +67,12 @@
  .logo_image {
    width: 166px;
    margin: 25px 0 10px 0;
+ }
+
+ .top-part {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
  }
 
  .about {
@@ -82,4 +100,3 @@
    background-blend-mode: lighten;
    box-shadow: 4px 4px 6px #000;
  }
-

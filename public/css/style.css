@@ -325,6 +325,12 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .header_logo {
   display: flex;
   justify-content: center;
@@ -348,6 +354,13 @@ h2 {
   justify-content: center;
   align-items: center;
   box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+@media screen and (min-width: 992px) {
+  .maps {
+    width: 350px;
+    border-radius: 15px;
+  }
 }
 
 .maps__search input {
@@ -364,6 +377,12 @@ h2 {
 .logo_image {
   width: 166px;
   margin: 25px 0 10px 0;
+}
+
+.top-part {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .about {
@@ -448,6 +467,7 @@ i {
   border-radius: 25px;
   font-weight: bold;
   box-shadow: 4px 10px 6px #e9e9e9;
+  width: 320px;
 }
 
 .howto-btn1 {
@@ -459,6 +479,7 @@ i {
   border-radius: 25px;
   font-weight: bold;
   box-shadow: 4px 10px 6px #e9e9e9;
+  width: 320px;
 }
 
 .howto_text {
@@ -477,35 +498,22 @@ i {
 }
 
 .heart {
-  display: flex;
-  float: right;
-  position: relative;
-  top: -25%;
-  width: 58px;
-  size: large;
+  position: absolute;
+  top: 210px;
+  left: 320px;
   font-size: 28px;
-  color: black;
-  cursor: pointer;
-}
-.heart:hover {
-  animation: fill 0.3s ease-in-out;
-  display: inline-block;
-  opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
 }
 
 .new {
   color: #008766;
   background: #a9f4e1;
   border: 5px solid #a9f4e1;
-  border-radius: 5px;
-  position: relative;
-  top: -92%;
-  left: 85%;
+  border-radius: 2px;
+  position: absolute;
+  top: 18px;
+  left: 283px;
+  width: 83px;
+  text-align: center;
 }
 
 .card {
@@ -517,16 +525,17 @@ i {
 }
 
 .btn_card {
-  width: 381px;
+  width: 365px;
   background-color: white;
   border-radius: 20px;
   margin-bottom: 28px;
   height: 275px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .card_img {
-  width: 381px;
+  width: 100%;
   height: 188px;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -543,15 +552,6 @@ i {
   position: relative;
   right: -5%;
   top: -4%;
-}
-
-card-figure {
-  margin: 0;
-}
-
-card-figcaption {
-  margin: 0;
-  padding: 10px;
 }
 
 a {
@@ -604,17 +604,18 @@ footer {
 }
 .fill {
   color: black;
-  cursor: pointer;
+  width: 100%;
 }
 .fill:hover {
   animation: fill 0.3s ease-in-out;
   display: inline-block;
   opacity: 1;
-  background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  background: linear-gradient(to top, #9356dc, #cf64dc, #e86edb);
   background: -webkit-linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,6 @@
 @import "./utils/variables";
 // @import "./utils/functions";
-// @import "./utils/mixins";
+@import "./utils/mixins";
 @import "./vendors/normalize";
 // @import "./utils/extensions";
 
@@ -24,4 +24,3 @@
 @import "./pages/footer";
 @import "./utils/keyframe";
 @import "./components/heart-icon";
-
