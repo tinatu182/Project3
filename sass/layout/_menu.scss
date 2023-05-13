@@ -1,0 +1,19 @@
+.menu_header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_image {
+    width: 166px;
+    margin: 25px 0 10px 0;
+}
+
+.main_menu {
+    background-color: #f6f6f6;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
+    position: relative;
+    margin-top: -50px;
+}
