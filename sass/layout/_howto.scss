@@ -5,6 +5,7 @@
 .howto_title {
     margin: 11px;
 }
+
 .howto_number {
     display: flex;
     justify-content: center;
@@ -29,12 +30,13 @@ i {
     width: 32px;
     font-size: 20px;
 }
- .howto_icon-3 {
+
+.howto_icon-3 {
     color: $color-icon;
     margin: 5px 8px 7px 0px;
     width: 32px;
     font-size: 20px;
- }
+}
 
 .howto {
     display: flex;
@@ -53,7 +55,7 @@ i {
     border: 12px solid #f6f6f6;
     border-radius: 25px;
     font-weight: bold;
-    box-shadow: 4px 10px 6px #e9e9e9;
+    box-shadow: 4px 10px 6px $color-shadow;
     width: 320px;
 }
 

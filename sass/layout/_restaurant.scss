@@ -10,22 +10,22 @@
  }
 
  .heart {
-  position: absolute;
-  top: 210px;
-  left: 320px;
-  font-size: 28px;
+   position: absolute;
+   top: 210px;
+   left: 320px;
+   font-size: 28px;
  }
 
  .new {
-  color: #008766;
-  background: #a9f4e1;
-  border: 5px solid #a9f4e1;
-  border-radius: 2px;
-  position: absolute;
-  top: 18px;
-  left: 283px;
-  width: 83px;
-  text-align: center;
+   color: #008766;
+   background: #a9f4e1;
+   border: 5px solid #a9f4e1;
+   border-radius: 2px;
+   position: absolute;
+   top: 18px;
+   left: 283px;
+   width: 83px;
+   text-align: center;
  }
 
  .card {
@@ -52,17 +52,19 @@
    object-fit: cover;
    border-radius: 20px 20px 0 0;
  }
-.card_title{
-  color: $color-primary;
-  position: relative;
-  right: -5%
-}
-.card_text {
-  color: $color-faded;
-  position: relative;
-  right: -5%;
-  top: -4%;
-}
+
+ .card_title {
+   color: $color-primary;
+   position: relative;
+   padding-left: 18px;
+ }
+
+ .card_text {
+   color: $color-faded;
+   position: relative;
+   padding-left: 18px;
+   top: -4%;
+ }
 
  a {
    text-decoration: none;
