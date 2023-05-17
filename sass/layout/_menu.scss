@@ -101,12 +101,11 @@
   padding: 20px;
   right: -50px;
   top: 0;
-  opacity: 0;
   transition: transform 330ms ease-in-out;
 
   & .fa-circle-check {
     color: #fff;
-    transition: transform 500ms ease-in-out;
+    transition: transform 450ms ease-in-out;
   }
 }
 

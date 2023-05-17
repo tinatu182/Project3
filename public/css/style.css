@@ -330,6 +330,11 @@ main {
   flex-direction: column;
   align-items: center;
 }
+@media screen and (min-width: 796px) {
+  main {
+    gap: 15px;
+  }
+}
 
 .header_logo {
   display: flex;
@@ -381,8 +386,15 @@ h2 {
 
 .top-part {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-around;
+}
+@media screen and (min-width: 992px) {
+  .top-part {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 
 .about {
@@ -391,6 +403,13 @@ h2 {
   align-items: center;
   background-color: rgba(170, 170, 170, 0.1294117647);
   margin: 0 0 45px 0;
+  width: 100vw;
+}
+@media screen and (min-width: 796px) {
+  .about {
+    width: 470px;
+    border-radius: 15px;
+  }
 }
 
 .btn__about button {
@@ -718,12 +737,11 @@ footer {
   padding: 20px;
   right: -50px;
   top: 0;
-  opacity: 0;
   transition: transform 330ms ease-in-out;
 }
 .meal_icon .fa-circle-check {
   color: #fff;
-  transition: transform 500ms ease-in-out;
+  transition: transform 450ms ease-in-out;
 }
 
 .meal_text {
