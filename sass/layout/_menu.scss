@@ -103,8 +103,8 @@
   top: 0;
   transition: transform 330ms ease-in-out;
 
-  & .fa-circle-check {
-    color: #fff;
+  i {
+    color: white;
     transition: transform 450ms ease-in-out;
   }
 }

@@ -739,8 +739,8 @@ footer {
   top: 0;
   transition: transform 330ms ease-in-out;
 }
-.meal_icon .fa-circle-check {
-  color: #fff;
+.meal_icon i {
+  color: white;
   transition: transform 450ms ease-in-out;
 }
 
