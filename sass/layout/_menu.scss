@@ -78,9 +78,9 @@
     transform: translate(-50px);
   }
 
-  &:hover .fa-circle-check {
-    transform: rotate(360deg);
-  }
+  // &:hover .fa-circle-check {
+  //   transform: rotate(360deg);
+  // }
 }
 
 .meals h4 {
@@ -101,17 +101,26 @@
   padding: 20px;
   right: -50px;
   top: 0;
-  transition: transform 330ms ease-in-out;
+  transition: transform 100ms ease-in-out;
 
   i {
     color: white;
-    transition: transform 330ms ease-in-out;
-    // @keyframes rotate-checkmark {
-    //   to {
-    //     transform: rotate(360deg);
-    //   }
-    // }
+    transition: transform 100ms ease-in-out;
+
+    &:hover {
+        @keyframes rotate-checkmark {
+      to {
+        transform: rotate(360deg);
+      }
+    }
   }
+  //   @keyframes rotate-checkmark {
+  //     to {
+  //       transform: rotate(360deg);
+  //     }
+  //   }
+  // }
+}
 }
 
 .meal_text {
