@@ -598,9 +598,11 @@ footer {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 796px) {
   .footer_text {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
   }
 }
@@ -627,6 +629,14 @@ footer {
     opacity: 0.5;
   }
   100% {
+    opacity: 1;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
     opacity: 1;
   }
 }
@@ -821,6 +831,13 @@ footer {
 }
 
 .spinner {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  z-index: 1000;
   animation: progress 0ms 3s forwards;
 }
 
@@ -838,15 +855,15 @@ footer {
   }
 }
 .menu {
-  animation: fadeinup 3s ease-in-out;
-}
-
-.meals {
   animation: fadeinup 6s ease-in-out;
 }
 
+.meals {
+  animation: fadein 6s ease-in-out;
+}
+
 .meal_text {
-  animation: fadeinup 9s ease-in-out;
+  animation: fadein 6s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

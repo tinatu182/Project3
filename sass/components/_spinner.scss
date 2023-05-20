@@ -8,8 +8,14 @@
 }
 
 .spinner {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  z-index: 1000;
   animation: progress 0ms 3s forwards;
-
 }
 
 @keyframes spin {
