@@ -2,6 +2,10 @@ footer {
     background-color: #353535;
     padding: 25px;
     color: white;
+
+    // @include desktop {
+    // flex-direction: row;
+    // }
 }
 
 .footer_title {
@@ -15,6 +19,13 @@ footer {
     list-style-type: none;
     margin: -16px 24px 5px -38px;
     font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        flex-direction: row;
+        width: 100%;
+    }
 
     li {
         padding: 5px 0 5px 0;

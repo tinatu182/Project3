@@ -595,6 +595,14 @@ footer {
   list-style-type: none;
   margin: -16px 24px 5px -38px;
   font-size: 18px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .footer_text {
+    flex-direction: row;
+    width: 100%;
+  }
 }
 .footer_text li {
   padding: 5px 0 5px 0;
@@ -741,7 +749,7 @@ footer {
 }
 .meal_icon i {
   color: white;
-  transition: transform 450ms ease-in-out;
+  transition: transform 330ms ease-in-out;
 }
 
 .meal_text {
