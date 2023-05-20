@@ -839,28 +839,13 @@ footer {
 .menu {
   animation: fadein 3s ease-in-out;
 }
-@media screen and (min-width: 992px) {
-  .menu {
-    width: 400px;
-  }
-}
 
 .meals {
   animation: fadein 6s ease-in-out;
 }
-@media screen and (min-width: 992px) {
-  .meals {
-    width: 400px;
-  }
-}
 
 .meal_text {
   animation: fadein 9s ease-in-out;
-}
-@media screen and (min-width: 992px) {
-  .meal_text {
-    width: 400px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

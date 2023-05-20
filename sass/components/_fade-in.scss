@@ -1,18 +1,9 @@
 .menu {
     animation: fadein 3s ease-in-out;
-    @include desktop {
-      width: 400px;
-    }
   }
   .meals {
     animation: fadein 6s ease-in-out;
-    @include desktop {
-      width: 400px;
-    }
   }
   .meal_text {
     animation: fadein 9s ease-in-out;
-    @include desktop {
-      width: 400px;
-    }
   }
