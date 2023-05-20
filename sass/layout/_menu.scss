@@ -78,9 +78,10 @@
     transform: translate(-50px);
   }
 
-  // &:hover .fa-circle-check {
-  //   transform: rotate(360deg);
-  // }
+  @include tablet {
+    width: 800px;
+    left: 50px;
+  }
 }
 
 .meals h4 {
@@ -108,13 +109,13 @@
     transition: transform 100ms ease-in-out;
 
     &:hover {
-        @keyframes rotate-checkmark {
-      to {
-        transform: rotate(360deg);
+      @keyframes rotate-checkmark {
+        to {
+          transform: rotate(360deg);
+        }
       }
     }
   }
-}
 }
 
 .meal_text {
@@ -132,9 +133,10 @@
   text-overflow: ellipsis;
   overflow: hidden;
   color: $color-faded;
-  // @include desktop {
-  //   padding-right: 20px;
-  // }
+
+  @include tablet {
+    padding-right: 20px;
+  }
 }
 
 .meal_text span {

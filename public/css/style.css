@@ -390,9 +390,11 @@ h2 {
   align-items: center;
   justify-content: space-around;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 796px) {
   .top-part {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
   }
 }
@@ -742,6 +744,12 @@ footer {
   opacity: 1;
   transform: translate(-50px);
 }
+@media screen and (min-width: 796px) {
+  .meals {
+    width: 800px;
+    left: 50px;
+  }
+}
 
 .meals h4 {
   position: relative;
@@ -789,6 +797,11 @@ footer {
   overflow: hidden;
   color: rgba(114, 116, 114, 0.8588235294);
 }
+@media screen and (min-width: 796px) {
+  .meal_text p {
+    padding-right: 20px;
+  }
+}
 
 .meal_text span {
   margin-right: 5px;
@@ -821,22 +834,14 @@ footer {
   margin: 30px 0px 0px 0px;
 }
 
-.loader {
-  border: 16px solid #f3f3f3;
-  border-radius: 50%;
-  border-top: 16px solid #3498db;
-  width: 120px;
-  height: 120px;
-  animation: spin 5s linear infinite;
-}
-
 .spinner {
   position: fixed;
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
+  background-color: rgb(243, 237, 237);
   z-index: 1000;
   animation: progress 0ms 3s forwards;
 }
@@ -854,16 +859,25 @@ footer {
     transform: scale(0);
   }
 }
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 5s linear infinite;
+}
+
 .menu {
-  animation: fadeinup 6s ease-in-out;
+  animation: fadeinup 3s ease-in-out;
 }
 
 .meals {
-  animation: fadein 6s ease-in-out;
+  animation: fadein 3s ease-in-out;
 }
 
 .meal_text {
-  animation: fadein 6s ease-in-out;
+  animation: fadein 3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
