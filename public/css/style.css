@@ -630,11 +630,12 @@ footer {
     opacity: 1;
   }
 }
-@keyframes fadein {
+@keyframes fadeinup {
   from {
-    opacity: 0;
+    transform: translate3d(0, 40px, 0);
   }
   to {
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -837,15 +838,15 @@ footer {
   }
 }
 .menu {
-  animation: fadein 3s ease-in-out;
+  animation: fadeinup 3s ease-in-out;
 }
 
 .meals {
-  animation: fadein 6s ease-in-out;
+  animation: fadeinup 6s ease-in-out;
 }
 
 .meal_text {
-  animation: fadein 9s ease-in-out;
+  animation: fadeinup 9s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */
