@@ -67,7 +67,7 @@
   text-overflow: ellipsis;
   overflow: hidden;
   height: 63px;
-  transition: padding-right 450ms ease-in-out;
+  transition: padding-right 600ms ease-in-out;
 
   &:hover {
     padding-right: 75px;
@@ -76,6 +76,10 @@
   &:hover .meal_icon {
     opacity: 1;
     transform: translate(-50px);
+
+    i {
+      animation: rotate-checkmark 600ms ease-in-out;
+    }
   }
 
   @include tablet {
@@ -107,14 +111,12 @@
   i {
     color: white;
     transition: transform 100ms ease-in-out;
+  }
+}
 
-    &:hover {
-      @keyframes rotate-checkmark {
-        to {
-          transform: rotate(360deg);
-        }
-      }
-    }
+@keyframes rotate-checkmark {
+  to {
+    transform: rotate(360deg);
   }
 }
 
