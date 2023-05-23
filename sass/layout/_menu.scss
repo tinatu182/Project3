@@ -92,11 +92,6 @@
       animation: rotate-checkmark 600s ease-in-out;
     }
   }
-
-  @include tablet {
-    width: 800px;
-    left: 50px;
-  }
 }
 
 .meals h4 {
