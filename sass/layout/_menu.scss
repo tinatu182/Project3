@@ -78,7 +78,14 @@
   text-overflow: ellipsis;
   overflow: hidden;
   height: 63px;
+  animation: fadeinup ease-in-out ;
   transition: padding-right 1s ease-in-out;
+
+  @for $i from 1 through 10 {
+    &--#{$i} {
+      animation-delay: 100ms * $i;
+    }
+  }
 
   &:hover {
     padding-right: 75px;
@@ -89,10 +96,11 @@
     transform: translate(-50px);
 
     i {
-      animation: rotate-checkmark 600s ease-in-out;
+      animation: rotate-checkmark 1s ease-in-out;
     }
   }
 }
+
 
 .meals h4 {
   position: relative;
@@ -112,7 +120,7 @@
   padding: 20px;
   right: -50px;
   top: 0;
-  transition: transform 100ms ease-in-out;
+  transition: transform 1s ease-in-out;
 
   i {
     color: white;
@@ -121,6 +129,9 @@
 }
 
 @keyframes rotate-checkmark {
+  from {
+    transform: rotate(0deg);
+  }
   to {
     transform: rotate(360deg);
   }
