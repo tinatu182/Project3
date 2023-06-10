@@ -6,25 +6,8 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(243, 237, 237);
-  z-index: 1000;
-  animation: progress 0ms 3s forwards;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-@keyframes progress {
-  100% {
-    transform: scale(0);
-  }
-}
 
 .loader {
   border: 16px solid #f3f3f3;
@@ -32,5 +15,4 @@
   border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  animation: spin 5s linear infinite;
 }
